@@ -1,0 +1,200 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body, html {
+    width: 100%;
+    height: 100%;
+    background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-red-and-grey-tech-corporate-geometric-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_r7v6-rzkg_thumbnail-1080_01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+} */
+.signbody{
+    width: 100%;
+    height: 100vh;
+    background-color: #DD4B39;
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/videoblocks-red-and-grey-tech-corporate-geometric-motion-background-seamless-looping-video-animation-ultra-hd-4k-3840x2160_r7v6-rzkg_thumbnail-1080_01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+body {
+    font-family: 'Ubuntu';
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+}
+
+.Signup-container {
+    position: relative;
+}
+
+.Signup-lf-container {
+    position: absolute;
+    margin: 20px calc(50% - 10em);
+    background-color: #fff;
+    width: 26em;
+    border-radius: 3px;
+    padding: .8em;
+    text-align: center;
+    box-shadow: 3px 4px 8px rgb(0, 0, 0, 0.3);
+    flex-wrap: nowrap;
+    margin-top: 10%;
+}
+
+/* title */
+.signup-title {
+    font-size: 1.1em;
+    font-family: 'Open Sans', cursive;
+    font-style: normal;
+    color: #333;
+    letter-spacing:1px;
+    text-align:center;
+    padding: 12px
+}
+/* Signup-form-group */
+.Signup-form-group {
+    margin: 12px;
+    text-align: center;
+}
+
+/* google facebook signup buttons */
+.Signup-gf-login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid rgb(0,0,0,0.05);
+    padding: 24px 0 18px 0;
+}
+
+
+.Signup-gf-login a {
+    width: calc(60% - 4px);
+    max-width: calc(60% - 4px);
+    padding: 8px;
+    margin: 0 4px;
+    font-size: 1em;
+    border: 1px solid rgb(0,0,0,0.05);
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.Signup-gf-login a p {
+    font-size: 12px;
+    margin: 0 auto;
+    
+}
+.Signup-gf-login a:first-child {
+    background-color: #DD4B39
+}
+.Signup-gf-login a:first-child:hover {
+    background-color: rgb(199, 63, 45);
+    transition: all 0.5s
+}
+
+.Signup-gf-login a:last-child {
+    background-color: #3B5998
+}
+
+.Signup-gf-login a:last-child:hover {
+    background-color: rgb(48, 74, 131);
+    transition: all 0.5s
+}
+
+/* form */
+.Signup-login-form input{
+    width: 80%;
+    line-height: 3em;
+    border: none;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 2px;
+    padding: 3px 0 0 8px;
+    font-size: 0.75em
+}
+
+.Signup-login-form input:focus {
+    border-color: rgb(67, 156, 240) ;
+    transition: all 0.5s
+}
+
+/* remember me */
+.remember-me {
+    font-family: 'Ubunto';
+    display: flex;
+    padding-left: 48px;
+    font-size: 13px;
+    margin-top: 2em
+}
+.remember-me input[type="checkbox"] {
+    width: 10px;
+    margin-right: 4px;
+    float: left;
+       
+}
+/* rules */
+.rules {
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    float: left;
+    padding-left: 36px;
+}
+.rules a {
+    text-decoration: none
+}
+
+/* signuo button */
+
+.Signup-button {
+    width: 85%;
+    height: 40px;
+    background-color: #9e0c0c;
+    outline: none;
+    border: none;
+    padding: 4px 0;
+    border-radius: 2px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 24px
+}
+
+.Signup-button:hover {
+    background-color: #ec091c;
+    transition: all 0.3s;
+    cursor: pointer;
+} 
+
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #791616;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+.forgot
+{
+    margin-top: 10px;
+    color: #923939;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.forgot a
+{
+    color: #ff0800;
+}

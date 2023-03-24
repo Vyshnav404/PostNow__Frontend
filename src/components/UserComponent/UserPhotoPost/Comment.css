@@ -1,0 +1,14 @@
+.comment_head{
+    border:1px solid rgb(37, 36, 36);
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comment__profile{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
