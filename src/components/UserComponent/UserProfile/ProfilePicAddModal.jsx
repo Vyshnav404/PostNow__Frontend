@@ -22,10 +22,10 @@ function ProfilePicAddModal() {
     if(Allowed_File_Types.includes(image.type)){
       const data = new FormData()
     data.append("file",image)
-    data.append("upload_preset","imagetesting")
-    data.append("cloud_name",'dv5vyqpjh') 
+    data.append("upload_preset",import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET)
+    data.append("cloud_name",import.meta.env.VITE_CLOUDINARY_UPLOAD_NAME) 
     
-    await fetch('https://api.cloudinary.com/v1_1/dv5vyqpjh/image/upload',{
+    await fetch(`https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUDINARY_UPLOAD_NAME}/image/upload`,{
       method:"post",
       body:data
     }).then((res)=>res.json())

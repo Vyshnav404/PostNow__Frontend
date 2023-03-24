@@ -76,6 +76,7 @@ function Userlogin() {
                 {error && <div><p className='errormsg'>{error}</p></div>}
             </form>
             <p className="forgot">Not a member ? <Link to='/user/signup'>signup now</Link></p>
+            <p className="forgot"> <Link to='/forget-password'>Forget Password</Link></p>
             
         </div>
       </div>

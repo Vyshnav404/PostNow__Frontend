@@ -12,6 +12,8 @@ import UserPostPage from '../Pages/user/UserPostPage'
 import OthersProfilePage from '../Pages/user/OthersProfilePage'
 import MessengerPage from '../Pages/user/MessengerPage'
 import ErrorPage from '../Pages/ErrorPage/ErrorPage'
+import ForgotPassword from '../components/UserComponent/ForgotPassword/ForgotPassword'
+import NewPassword from '../components/UserComponent/ForgotPassword/NewPassword'
 
 
 function UserRouter() {
@@ -27,6 +29,9 @@ function UserRouter() {
       <Route exact path='/user/userpost' element={<ProtectedRouted> <UserPostPage /> </ProtectedRouted>} />
       <Route exact path='/user/othersprofile' element={<ProtectedRouted> <OthersProfilePage /> </ProtectedRouted>} />
       <Route exact path='/user/messenger' element={<ProtectedRouted> <MessengerPage /> </ProtectedRouted>} />
+      <Route exact path='/forget-password' element={<ForgotPassword /> } />
+      <Route exact path='/password-reset/:id' element={<NewPassword /> } />
+      
       <Route path='/*' element={<ErrorPage />} />
     </Routes>
 </>
